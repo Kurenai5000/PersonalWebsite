@@ -29,7 +29,26 @@
 <h1>Divination tools</h1>
 <p>Click on the enchanted button to get a mystical reading of your fate.</p>
 
-<img src="../../images/divinationChan1.png" width=40%>
+<img id="image1" src="../../images/divinationChan1.png" width=40% alt="image2" onclick="changeImage()">
+<img src="../../images/divinationChan2.png" width=40% alt="image1" style="display:none" id="image2">
+
+<script> 
+function changeImage(){
+  var originalImage = document.getElementById("image1");
+  var otherImage =document.getElementById("image2");
+
+  originalImage.style.display = "none";
+  otherImage.style.display = "block";
+
+  setTimeout(function(){
+    originalImage.style.display = "block";
+    otherImage.style.display = "none";
+    }, 800);
+}
+
+</script>
+
+
 
 <h1>Yes or No Divination</h1>
 <button id="YesNoButton" style="font-size:36px;">Click me</button>
