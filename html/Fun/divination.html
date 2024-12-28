@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <meta charset="UTF-8">
+
+ <title>Divination</title>
+
+<head>
+
+<body style="background-color:#ffe6ea;">
+
+
+<!-- header buttons -->
+<center>
+<a href="../../index.html"> <button style="font-size:36px;">Home</button> </a>
+<a href="../../socialMedia.html"> <button style="font-size:36px;">Social Media</button> </a>
+<a href="../../commercial.html"> <button style="font-size:36px;">Commercial</button> </a>
+<a href="../../education.html"> <button style="font-size:36px;">Education</button> </a>
+<a href="../../downloads.html"> <button style="font-size:36px;">Downloads</button> </a>
+<a href="../../fun.html"> <button style="font-size:36px;">Fun</button> </a>
+</center>
+
+<!-- home text and stuff -->
+
+<center>
+<h1>Divination tools</h1>
+<p>Click on the enchanted button to get a mystical reading of your fate.</p>
+
+<h1>Yes or No Divination</h1>
+<button id="YesNoButton" style="font-size:36px;">Click me</button>
+
+<script>
+const button = document.getElementById("YesNoButton");
+
+button.addEventListener("click", () => {button.textContent = Math.random() > 0.5 ? "Yes" : "No";});
+</script>
+
+<h1>General Divination</h1>
+<button id="generalButton" style="font-size:36px; width:700px; height:200px;">Click me</button>
+<script>
+const button2 = document.getElementById("generalButton");
+
+const texts2 = ["Children, Childhood, Birth, Youth, Newness, Beginning, Rebirth.", "Darkness, Evil, Occultism, Bad thoughts, Blindness, Ignorance.", "Pleasure, Bliss, Relaxation, Enjoyment.", "Work, Routine, Practice, Application.", "Travel, Adventure, New destinations, New cultures.", "Love, Relationships, Connection.", "Words, Books, Web pages, Information, Education.", "Anger, Energy, Passion, Agression, Force.", "Death, Stangation, Ending of a cycle, Cycles.", "Advice, Council, Meditation, Contemplation."  ];
+
+button2.addEventListener("click", () => {
+const randomText = texts2[Math.floor(Math.random()*texts2.length)];
+button2.textContent = randomText;
+});
+</script>
+
+<h1>Three Planes Divination</h1>
+<button id="threePlanesButton" style="font-size:36px; width:700px; height:200px;">Click me</button>
+<script>
+const button3 = document.getElementById("threePlanesButton");
+
+const texts3 = ["Lower World, Negative - Trapped, debt, slow, heavy, isolation, fear.", "Lower World, Positive - Wealth, Stability, Protection, Abundance.", "Middle World, Negative - Bad social experiences, Boredom, Mundanity, Limbo.", "Middle World, Positive - Good social experiences, Smoothness, life progression.", "Upper World, Negative - Bad thoughts, Psychic attack, Bad weather, Bad luck, Lost.", "Upper World, Positive - Luck, New ideas, Positive force, Inspiration, Good weather."];
+
+button3.addEventListener("click", () => {
+const randomText = texts3[Math.floor(Math.random()*texts3.length)];
+button3.textContent = randomText;
+});
+</script>
+
+<h1>Five Element Divination</h1>
+<button id="fiveElementsButton" style="font-size:36px; width:700px; height:200px;">Click me</button>
+<script>
+const button4 = document.getElementById("fiveElementsButton");
+
+const texts4 = ["Earth - Stability, Age, Growth, Groundedness, Rigidity, Wealth.", "Water - Emotions, Dreams, Healing, Reflections, Contemplation.", "Air - Movement, Communication, Speed, Chaos, Instability.", "Fire - Energy, Passion, Force, Pain, Intensity, Destruction.", "Aether - Confusion, Newness, Magic, Randomness, Seeing through illusion, Illogical, Unnatural."];
+
+button4.addEventListener("click", () => {
+const randomText = texts4[Math.floor(Math.random()*texts4.length)];
+button4.textContent = randomText;
+});
+</script>
+
+
+<h1>Seven Planets Divination</h1>
+<button id="sevenPlanetsButton" style="font-size:36px; width:700px; height:200px;" >Click me</button>
+<script>
+const button5 = document.getElementById("sevenPlanetsButton");
+
+const texts5 = ["Saturn - Stability, Blockages, Slow, Time, Isolation, Routine, Grounding.", "Jupiter - Expansion, Fertility, Luck, Greed, Overindulgence, Iresponsibility.", "Mars - Action, Energy, Passion, Anger, Agression, Tunnel vision, Inflamation.", "Venus - Beauty, Peace, Art, Love, Lust, Vanity, Appearances.", "Mercury - Intellect, Movement, Delivery, Language, Work.", "Luna - Dreams, Subconscious, Emotions, Mind, Reflection.", "Sol - Greatness, Radiance, Pressure, Vitality, Life, Consciousness, Destruction, Ignorance."];
+
+button5.addEventListener("click", () => {
+const randomText = texts5[Math.floor(Math.random()*texts5.length)];
+button5.textContent = randomText;
+});
+</script>
+
+
+<h1>Eight Positions Divination</h1>
+<button id="eightPositionsButton" style="font-size:36px; width:700px; height:200px;;">Click me</button>
+<script>
+const button6 = document.getElementById("eightPositionsButton");
+
+const texts6 = ["North - Cold, Stable, Winter, Rest.", "North East - ", "East - ", "South East - ", "South - Hot, Action, Summer, Do.", "South West - ", "West - ", "North West - "];
+
+button6.addEventListener("click", () => {
+const randomText = texts6[Math.floor(Math.random()*texts6.length)];
+button6.textContent = randomText;
+});
+</script>
+
+<h1>12 Zodiac Divination</h1>
+<button id="12ZodiacButton" style="font-size:36px; width:700px; height:200px;;">Click me</button>
+<script>
+const button7 = document.getElementById("12ZodiacButton");
+
+const texts7 = ["Aries - Action, Beginning, Energy, Blindsided, Anger, Selfishness.", "Taurus - Construction, Growth, Wealth, Craft, Greed.", "Gemini - Intelligence, Writing, Speaking, Foolishness.", "Cancer - Emotions, Home, Protection, ", "Leo - Social media, Main character, Ego, Leader/", "Virgo - Health, Work, Analysis, Scrutinising", "Libra - Friends, Love, Relationships, Art, Beauty, Balance, Relation, Vanity.", "Scorpio - Brooding, Dark emotions, Magic and occultism, Sex, Life and death.", "Sagittarius - Travel, Adventure, Exploration, Philosophy, Growth, Wisdom, Vehicles.", "Capricorn - Stability, Career, Status, Workplace, Country, Stagnation.", "Aquarius - Connection, Social media, Technology, Accelerationism, Uniqueness, Virtual environments.", "Pisces - Dreams, Reflections, Subconscious, Depth, Feelings, Addictions."];
+
+button7.addEventListener("click", () => {
+const randomText = texts7[Math.floor(Math.random()*texts7.length)];
+button7.textContent = randomText;
+});
+</script>
+
+</center>
+
+
+</body>
+
+</html>
