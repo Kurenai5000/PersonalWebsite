@@ -64,7 +64,18 @@ button.addEventListener("click", () => {button.textContent = Math.random() > 0.5
 <script>
 const button2 = document.getElementById("generalButton");
 
-const texts2 = ["Children, Childhood, Birth, Youth, Newness, Beginning, Rebirth.", "Darkness, Evil, Occultism, Bad thoughts, Blindness, Ignorance.", "Pleasure, Bliss, Relaxation, Enjoyment.", "Work, Routine, Practice, Application.", "Travel, Adventure, New destinations, New cultures.", "Love, Relationships, Connection.", "Words, Books, Web pages, Information, Education.", "Anger, Energy, Passion, Agression, Force.", "Death, Stangation, Ending of a cycle, Cycles.", "Advice, Council, Meditation, Contemplation."  ];
+const texts2 = ["Children, Childhood, Birth, Youth, Newness, Beginning, Rebirth.", 
+"Darkness, Evil, Occultism, Bad thoughts, Blindness, Ignorance.", 
+"Pleasure, Bliss, Relaxation, Enjoyment.", 
+"Work, Routine, Practice, Application.", 
+"Travel, Adventure, New destinations, New cultures.", 
+"Love, Relationships, Connection, Family.", 
+"Words, Books, Web pages, Information, Education.", 
+"Anger, Energy, Passion, Agression, Force.", 
+"Death, Stangation, Ending of a cycle, Cycles.", 
+"Advice, Council, Meditation, Contemplation.",
+"Middle ground, People, Society, Mundane, Waiting.",
+"Health, Body, Rest, Diet, Exercise." ];
 
 button2.addEventListener("click", () => {
 const randomText = texts2[Math.floor(Math.random()*texts2.length)];
@@ -118,7 +129,7 @@ button5.textContent = randomText;
 <script>
 const button6 = document.getElementById("eightPositionsButton");
 
-const texts6 = ["North - Cold, Stable, Winter, Rest.", "North East - ", "East - ", "South East - ", "South - Hot, Action, Summer, Do.", "South West - ", "West - ", "North West - "];
+const texts6 = ["North - Cold, Stable, Winter, Rest, Wealth, Fallen, Career.", "North East - Wisdom, Knowledge, Education, Skills.", "East - Spring, Growth, Birth, Warm, New cycle, Rising, Family.", "South East - Abundance, Wealth.", "South - Hot, Action, Summer, Do, Peak, Fame, Reputation.", "South West - Love, Relationships.", "West - Autumn, Falling, Harvest, Children.", "North West - Travel, Help, Blessings."];
 
 button6.addEventListener("click", () => {
 const randomText = texts6[Math.floor(Math.random()*texts6.length)];
