@@ -51,7 +51,7 @@ function changeImage(){
 
 
 <h1>Yes or No Divination</h1>
-<button id="YesNoButton" style="font-size:36px;">Click me</button>
+<button id="YesNoButton" style="font-size:36px; width:200px; height:100px">Click me</button>
 
 <script>
 const button = document.getElementById("YesNoButton");
@@ -147,6 +147,121 @@ const texts7 = ["Aries - Action, Beginning, Energy, Blindsided, Anger, Selfishne
 button7.addEventListener("click", () => {
 const randomText = texts7[Math.floor(Math.random()*texts7.length)];
 button7.textContent = randomText;
+});
+</script>
+
+<h1>Number Divination</h1>
+<button id="numberButton" style="font-size:36px; width:200px; height:100px;;">Click me</button>
+<script>
+const button8 = document.getElementById("numberButton");
+
+const texts8 = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+
+button8.addEventListener("click", () => {
+const randomText = texts8[Math.floor(Math.random()*texts8.length)];
+button8.textContent = randomText;
+});
+</script>
+
+<h1>Letter Divination</h1>
+<button id="letterButton" style="font-size:36px; width:200px; height:100px;;">Click me</button>
+<script>
+const button9 = document.getElementById("letterButton");
+
+const texts9 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+button9.addEventListener("click", () => {
+const randomText = texts9[Math.floor(Math.random()*texts9.length)];
+button9.textContent = randomText;
+});
+</script>
+
+<h1>Tarot Divination(Unfinished)</h1>
+<button id="tarotButton" style="font-size:36px; width:700px; height:200px;;">Click me</button>
+<script>
+const button10 = document.getElementById("tarotButton");
+
+const texts10 = ["The Fool (0)", "The Magician (1)", "The High Priestess (2)", "The Empress (3)", "The Emperor (4)", "The Hierophant (5)", "The Lovers (6)", "The Chariot (7)", "Strength (8)", "The Hermit (9)", "Wheel of Fortune (10)", "Justice (11)", "The Hanged Man (12)", "Death (13)", "Temperance (14)", "The Devil (15)", "The Tower (16)", "The Star (17)", "The Moon (18)", "The Sun (19)", "Judgment (20)", "The World (21)"];
+
+button10.addEventListener("click", () => {
+const randomText = texts10[Math.floor(Math.random()*texts10.length)];
+button10.textContent = randomText;
+});
+</script>
+
+<h1>IChing/Yijing(易經) Divination</h1>
+<button id="iChingButton" style="font-size:36px; width:700px; height:200px;;">Click me</button>
+<script>
+const button11 = document.getElementById("iChingButton");
+
+const texts11 = ["乾 (Qian) - Force",
+"坤 (Kun) - Field",
+"屯 (Zhūn) - Sprouting",
+"蒙 (Mèng) - Yielding",
+"需 (Xū) - Waiting",
+"訟 (Xiǎo) - Arguing",
+"大亨 (Dà Héng) - Great Accumulation",
+"既濟 (Jì Jì) - After Completion",
+"小畜 (Xiǎo Xù) - Small Accumulation",
+"復 (Fù) - Returning",
+"泰 (Tài) - Peace",
+"頤 (Yí) - Swallowing",
+"履 (Lǚ) - Treading",
+"夬 (Duì) - Obstruction",
+"靜 (Jìng) - Resting",
+"threaten (Wēi) - Warning",
+"隨 (Suí) - Following",
+"蠱 (Gǔ) - Correcting",
+"臨 (Lín) - Nearing",
+"觀 (Guān) - Viewing",
+"噬嗑 (Shì Kè) - Gnawing Bite",
+"剝 (Bō) - Stripping",
+"失 (Shì) - Losing",
+"夫 (Fù) - Husband",
+"無妄 (Wú Wàng) - Without Embroiling",
+"大過 (Dà Guò) - Great Exceeding",
+"頓 (Dùn) - Gentle",
+"震 (Zhèn) - Thunder",
+"咸 (Xián) - Water",
+"坎 (Kǎn) - Gorge",
+"離 (Lí) - Radiance",
+"霜 (Shuāng) - Frost",
+"家人 ( Jiā Rén) - Family",
+"退 (Tuì) - Retreating",
+"晉 (Jìn) - Advancing",
+"蒙 (Mèng) - Yielding",
+"家人 ( Jiā Rén) - Family",
+"退 (Tuì) - Retreating",
+"晉 (Jìn) - Advancing",
+"蹇 (Xiǎn) - Attenuation",
+"解 (Xiè) - Release",
+"益 (Yì) - Increase",
+"夫 (Fù) - Husband",
+"亢 (Kàng) - Climbing",
+"萃 (Cuì) - Clustering",
+"革 (Gé) - Revolution",
+"剝 (Bō) - Stripping",
+"亥 (Hài) - Pig",
+"鼎 (Dǐng) - Cauldron",
+"飛 (Fēi) - Flight",
+"澤 (Zé) - Marsh",
+"艮 (Gèn) - Bound",
+"則 (Zé) - Measure",
+"亨 (Hēng) - Progress",
+"遯 (Dùn) - Gentle",
+"旅 (Lǚ) - Traveling",
+"霊 (Líng) - Spirit",
+"鬥 (Dòu) - Conflict",
+"蹇 (Xiǎn) - Attenuation",
+"霜 (Shuāng) - Frost",
+"霊 (Líng) - Spirit",
+"退 (Tuì) - Retreating",
+"晉 (Jìn) - Advancing",
+"未濟 (Wèi Jì) - Not Yet Completed",];
+
+button11.addEventListener("click", () => {
+const randomText = texts11[Math.floor(Math.random()*texts11.length)];
+button11.textContent = randomText;
 });
 </script>
 
