@@ -1,0 +1,6 @@
+body {background-color:#ffe6ea;}
+/*Generic classes*/
+.centered{text-align:center;}
+
+.boxed{background-color:#a68ed5; border: 5px solid #563d87; padding: 1%; width: 80%; height:10%;}
+.textShadow{text-shadow:0px 0px 20px #f5d4f9, 0px 0px 20px #fdf0ff;}
