@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Status Checker</title>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h1>Status Checker</h1>
+<p>Plug in your details to get a value for your status, then check your value against other formulas to see where you match up in society.</p>
+
+
+<form>
+<div id="box">
+ <h2>Basic(Not implemented yet)</h2>
+ <label for="genderOption"><h3>Gender:</h3></label>
+  <p>Note that the female gender is not yet implemeneted</p>
+  <select name="gender" id="genderOption">
+    <option value ="male">Male</option>
+    <option value ="female">Female</option>
+  </select>
+ <br><br>
+
+
+ <label for="ageOption"><h3>Age:</h3></label>
+ <p>This category requires your physical age in years.</p>
+ <input type="number" id="ageOption" name="age">
+ <br><br>
+
+ <label for="regionOption"><h3>Region:</h3></label>
+ <p>Geographical region</p>
+ <select name="region" id="regionOption">
+    <option value ="male">Male</option>
+    <option value ="female">Female</option>
+  </select>
+ <br><br>
+</div>
+
+<div id="box">
+ <h2>Financial</h2> 
+
+ <label for="wealthOption"><h3>Wealth(income and assets):</h3></label>
+ <p>This category requires your wealth, meaning how much you earn and if you have a lot of assets. Average would be average income + whatever is average to own in your country (car, house, etc).</p>
+  <select name="wealth" id="wealthOption">
+    <option value ="veryPoor">Very poor</option>
+    <option value ="poor">Poor</option>
+    <option value ="average">Average</option>
+    <option value ="aboveAverage">Above average</option>
+    <option value ="rich">Rich</option>
+    <option value ="veryRich">Very Rich</option>
+    <option value ="billionaire">Billionaire</option>
+  </select>
+ <br><br>
+
+
+ <label for="jobOption"><h3>Job:</h3></label>
+ <p>In this category add your job. Basic jobs would be cleaning, customer service, "unskilled work" low paying jobs. Average would be mildly skilled, average paying. High level jobs are highly skilled like doctor, lawyer, engineer and are high paying.</p>
+<p>Small business is 1-10 employees while large would be 10+. Politician or ruler is top CEO positions, high level government and anything at the peak of society.</p>
+  <select name="job" id="jobOption">
+    <option value ="none">None</option>
+    <option value ="basicJob">Basic job</option>
+    <option value ="averageJob">Average  job</option>
+    <option value ="successful small business">Successful small business</option>
+    <option value ="highLevelJob">High level job</option>
+    <option value ="successful large business">Successful large business</option>
+    <option value ="politician">Politician/Ruler</option>
+  </select>
+ <br><br>
+</div>
+
+
+
+<div id="box">
+ <h2>Social</h2>
+ 
+ <label for="reputationOption"><h3>Reputation:</h3></label>
+ <p>This is how well known you are locally, globally, on the internet, etc. So a million followers on the internet would be well known and loved. Similarly if your face is commonly on a local newspaper or tv this could be in that category too.</p>
+  <select name="reputation" id="reputationOption">
+    <option value ="unkown">Unknown/horrible reputation</option>
+    <option value ="few">Few know you/bad rep</option>
+    <option value ="some">Some know you/neutral</option>
+    <option value ="many">Many know you/good</option>
+    <option value ="well">Well known and loved</option>
+    <option value ="incredible">Incredibly popular</option>
+  </select>
+ <br><br>
+
+ <label for="socialOption"><h3>Social skills:</h3></label>
+ <p>This is how well you do in a social environment like workplace, society, parties, family, etc. How well you can network, sell, perform customer service, talk to others you haven't before, cold call, etc.</p>
+  <select name="social" id="socialOption">
+    <option value ="awful">Awful</option>
+    <option value ="bad">Bad</option>
+    <option value ="average">Average</option>
+    <option value ="comfortable">Comfortable</option>
+    <option value ="skilled">Skilled diplomat/communicator</option>
+  </select>
+ <br><br>
+
+ <label for="looksOption"><h3>Looks:</h3></label>
+ <p>This is mainly about your clothing, but also about the design or looks of anything you own, social media, etc. How people "see" you and your stuff.</p>
+  <select name="looks" id="looksOption">
+    <option value ="ugly">Ugly</option>
+    <option value ="uncomfortable">Uncomfortable</option>
+    <option value ="average">Average</option>
+    <option value ="good">Looks good</option>
+    <option value ="impressive">Impressive</option>
+  </select>
+ <br><br>
+</div>
+
+<div id="box">
+ <h2>Physical</h2>
+
+ <label for="physiqueOptions"><h3>Physique(face, body):</h3></label>
+ <p>This includes facial beauty and the beauty of the body. So for men it's muscular development without going into extremes.</p>
+  <select name="physique" id="physiqueOptions">
+    <option value ="hideous">Hideously ugly</option>
+    <option value ="ugly">Ugly</option>
+    <option value ="average">Average</option>
+    <option value ="good">Good</option>
+    <option value ="beautiful">Beautiful</option>
+  </select>
+ <br><br>
+
+ <label for="hormoneOptions"><h3>Masculinity/Femininity(Hormonal expression):</h3></label>
+ <p>This is your hormonal expression. For women it drives breast and ass development, fertility and facial beauty. For men it increases muscle mass, increases drive, agression and focus.</p>
+  <select name="hormone" id="hormoneOptions">
+    <option value ="androginous">androginous</option>
+    <option value ="poor">Poor hormonal expression</option>
+    <option value ="average">Average hormonal expression</option>
+    <option value ="good">Good hormonal expression</option>
+    <option value ="exceptional">Exceptional hormonal expression</option>
+  </select>
+ <br><br>
+</div>
+
+
+<div id="box">
+ <h2>Mental</h2>
+
+ <label for="experienceOptions"><h3>Life experience</h3></label>
+ <p>This is how much you instinctually know and understand. How much is new or natural to you. Wisdom is included here.</p>
+  <select name="experience" id="experienceOptions">
+    <option value ="naive">Naive</option>
+    <option value ="inexperience">Inexperience</option>
+    <option value ="average">Average experience</option>
+    <option value ="well">Well experienced</option>
+    <option value ="master">Master of reality</option>
+  </select>
+ <br><br>
+
+ <label for="intelligenceOptions"><h3>Intelligence</h3></label>
+ <p>Raw brain power. How fast you can learn, ability to understand advanced concepts, to use the imagination and mind. Knowledge and creativity is included here too</p>
+  <select name="intelligence" id="intelligenceOptions">
+    <option value ="brainless">Brainless</option>
+    <option value ="stupid">Stupid</option>
+    <option value ="average">Average intelligence</option>
+    <option value ="smart">Smart</option>
+    <option value ="high">High IQ</option>
+  </select>
+ <br><br>
+</div>
+
+</form>
+
+<button id="calculateButton">Calculate</button>
+
+<div id="online">
+<h3>Total =</h3> <h3 id="totalStatus">0</h3> <h3>/100</h3>
+</div>
+
+<h3>Societal Baseline</h3>
+<p>Societal baseline important. If you are below this you do not fit into society and struggle getting anything/anywhere. Men below 35-40 are invisible.</p>
+<p>The base is relative with age. early 20's base is 40, early 30s is probably 47, early 40s base around be 52ish. It doesn't rise much more than that.</p>
+
+<h3>Societal Success</h3>
+<p>Success for men doesn't really happen till around 70-80. Early 20's success point would be 55-60. 30's is 65-70.</p>
+<p>Success means living a good life and not struggling with women, jobs, society, social situations, etc.</p>
+
+<h3>Geography</h3>
+<p>It also depends on geographical region. First world countries require an extra 10 or so points than a third world country.</p>
+<p>You may notice this is not easy to satisfy. Wonder why you struggle in life? There you go. Society is demanding.</p>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
