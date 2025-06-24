@@ -55,8 +55,8 @@ const looksObj = {ugly:0, uncomfortable:2, average:5, good:7, impressive:10};
 const physiqueObj = {horrible:0, ugly:2, average:5, good:7, beautiful:10};
 const hormoneObj = {androginous:0, poor:2, average:5, good:7, exceptional:10};
 
-const experienceObj = {naive:0, inexperience:2, average:5, well:7, master:10};
-const intelligenceObj = {brainless:0, stupid:2, average:5, smart:7, high:10};
+const experienceObj = {naive:0, inexperience:1, average:2, well:3, master:5};
+const intelligenceObj = {brainless:0, stupid:1, average:2, smart:3, high:5};
 
 const regionObj = {first:5, second:0, third:-5};
 
