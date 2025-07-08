@@ -29,8 +29,8 @@
 <h1>Divination tools</h1>
 <p>Click on the enchanted button to get a mystical reading of your fate.</p>
 
-<img id="image1" src="../../images/divinationChan1.png" width=40% alt="image2" onclick="changeImage()">
-<img src="../../images/divinationChan2.png" width=40% alt="image1" style="display:none" id="image2">
+<img id="image1" src="../../images/divinationChan1.webp" width=40% alt="image2" onclick="changeImage()">
+<img src="../../images/divinationChan2.webp" width=40% alt="image1" style="display:none" id="image2">
 
 <script> 
 function changeImage(){
@@ -181,7 +181,16 @@ button9.textContent = randomText;
 <script>
 const button10 = document.getElementById("tarotButton");
 
-const texts10 = ["The Fool (0)", "The Magician (1)", "The High Priestess (2)", "The Empress (3)", "The Emperor (4)", "The Hierophant (5)", "The Lovers (6)", "The Chariot (7)", "Strength (8)", "The Hermit (9)", "Wheel of Fortune (10)", "Justice (11)", "The Hanged Man (12)", "Death (13)", "Temperance (14)", "The Devil (15)", "The Tower (16)", "The Star (17)", "The Moon (18)", "The Sun (19)", "Judgment (20)", "The World (21)"];
+const texts10 = ["The Fool (0)", "The Magician (1)", "The High Priestess (2)", "The Empress (3)", "The Emperor (4)", "The Hierophant (5)", "The Lovers (6)", "The Chariot (7)", "Strength (8)", "The Hermit (9)", "Wheel of Fortune (10)", "Justice (11)", "The Hanged Man (12)", "Death (13)", "Temperance (14)", "The Devil (15)", "The Tower (16)", "The Star (17)", "The Moon (18)", "The Sun (19)", "Judgment (20)", "The World (21)",
+
+"Ace of Pentacles - ", "Two of Pentacles - ", "Three of Pentacles - ", "Four of Pentacles - ", "Five of Pentacles - ", "Six of Pentacles - ", "Seven of Pentacles - ", "Eight of Pentacles - ", "Nine of Pentacles - ", "Ten of Pentacles - ", "Princess of Pentacles - ", "Queen of Pentacles - ", "Prince of Pentacles - ", "King of Pentacles - ",
+
+"Ace of Cups - ", "Two of Cups - ", "Three of Cups - ", "Four of Cups - ", "Five of Cups- ", "Six of Cups - ", "Seven of Cups - ", "Eight of Cups - ", "Nine of Cups - ", "Ten of Cups - ", "Princess of Cups - ", "Queen of Cups - ", "Prince of Cups - ", "King of Cups - ",
+
+"Ace of Swords - ", "Two of Swords - ", "Three of Swords - ", "Four of Swords - ", "Five of Swords - ", "Six of Swords - ", "Seven of Swords - ", "Eight of Swords - ", "Nine of Swords - ", "Ten of Swords - ", "Princess of Swords - ", "Queen of Swords - ", "Prince of Swords - ", "King of Swords - ",
+
+"Ace of Wands - ", "Two of Wands - ", "Three of Wands - ", "Four of Wands - ", "Five of Wands - ", "Six of Wands - ", "Seven of Wands - ", "Eight of Wands - ", "Nine of Wands - ", "Ten of Wands - ", "Princess of Wands - ", "Queen of Wands - ", "Prince of Wands - ", "King of Wands - ",
+];
 
 button10.addEventListener("click", () => {
 const randomText = texts10[Math.floor(Math.random()*texts10.length)];
