@@ -2,134 +2,276 @@
 //stats
 let age = 0;
 let gender = "";
-let region = 0;
 
 let financial = 0;
-let wealth = 0;
-let job = 0;
+let wealth = "";
+let job = "";
 
 let social = 0;
-let reputation = 0;
-let socialSkills = 0;
-let looks = 0;
+let reputation = "";
+let socialSkills = "";
+let looks = "";
 
 let physical = 0;
-let physique = 0;
-let hormone = 0;
+let physique = "";
+let hormone = "";
 
 let mental = 0;
-let experience = 0;
-let intelligence = 0;
+let experience = "";
+let intelligence = "";
 
 //html vars
 const genderOption = document.getElementById("genderOption");
 const ageOption = document.getElementById("ageOption");
-const regionOption = document.getElementById("regionOption");
+
 
 const wealthOption = document.getElementById("wealthOption");
 const jobOption = document.getElementById("jobOption");
 
 const reputationOption = document.getElementById("reputationOption");
-const socialSkillsOption = document.getElementById("socialSkillsOption");
+const socialOption = document.getElementById("socialOption");
 const looksOption = document.getElementById("looksOption");
 
-const physiqueOption = document.getElementById("physiqueOptions");
-const hormoneOption = document.getElementById("hormoneOptions");
+const physiqueOptions = document.getElementById("physiqueOptions");
+const hormoneOptions = document.getElementById("hormoneOptions");
 
-const experienceOption = document.getElementById("experienceOptions");
-const intelligenceOption = document.getElementById("intelligenceOptions");
+const experienceOptions = document.getElementById("experienceOptions");
+const intelligenceOptions = document.getElementById("intelligenceOptions");
 
 //buttons
 const calculateButton = document.getElementById("calculateButton");
 
 const totalStatus = document.getElementById("totalStatus");
 
-//data structures
-const wealthObj = {veryPoor:0, poor:3, average:7, aboveAverage:10, rich:13, veryRich:16, billionaire:20};
-const jobObj = {none:0, basicJob:3, averageJob:7, smallBusiness:10, highLevelJob:13, largeBusiness:16, politician:20};
- 
-const reputationObj = {unkown:0, few:1, some:3, many:5, well:7, incredible:10};
-const socialSkillsObj = {awful:0, bad:2, average:5, comfortable:7, skilled:10};
-const looksObj = {ugly:0, uncomfortable:2, average:5, good:7, impressive:10};
-
-const physiqueObj = {horrible:0, ugly:2, average:5, good:7, beautiful:10};
-const hormoneObj = {androginous:0, poor:2, average:5, good:7, exceptional:10};
-
-const experienceObj = {naive:0, inexperience:1, average:2, well:3, master:5};
-const intelligenceObj = {brainless:0, stupid:1, average:2, smart:3, high:5};
-
-const regionObj = {first:5, second:0, third:-5};
-
 //funcs
 
 
 //entrance
 calculateButton.addEventListener("click", function(){
- //Physical
- wealth = wealthObj[wealthOption.value] ?? 0;
- job = jobObj[jobOption.value] ?? 0;
+//Physical
+ switch(wealthOption.value){
+  case "veryPoor":
+    wealth = 0;
+    break;
+  case "poor":
+    wealth = 3;
+    break;
+ case "average":
+    wealth = 7;
+    break;
+ case "aboveAverage":
+    wealth = 10;
+    break;
+ case "rich":
+    wealth = 13;
+    break;
+ case "veryRich":
+    wealth = 16;
+    break;
+ case "billionaire":
+    wealth = 20;
+    break;
+ }
 
- financial = wealth + job;
+ switch(jobOption.value){
+  case "none":
+    job = 0;
+    break;
+  case "basicJob":
+    job = 3;
+    break;
+ case "averageJob":
+    job = 7;
+    break;
+ case "successful":
+    job = 10;
+    break;
+ case "highLevelJob":
+    job = 13;
+    break;
+ case "successful":
+    job = 16;
+    break;
+ case "politician":
+    job = 20;
+    break;
+ }
 
- console.log("Financial = " + financial);
- console.log("Weath = " + wealth);
- console.log("Job = " + job);
+financial = wealth + job;
+console.log("Financial = " + financial);
+console.log("Weath = " + wealth);
+console.log("Job = " + job);
 
- //social
- reputation = reputationObj[reputationOption.value] ?? 0;
- socialSkills = socialSkillsObj[socialSkillsOption.value] ?? 0;
- looks = looksObj[looksOption.value] ?? 0;
 
- social = reputation + socialSkills + looks;
 
- console.log("Social = " + social);
- console.log("Reputation = " + reputation);
- console.log("SocialSkills = " + socialSkills);
- console.log("Looks = " + looks);
+
+
+
+//Social
+ switch(reputationOption.value){
+  case "unkown":
+    reputation = 0;
+    break;
+  case "few":
+    reputation = 1;
+    break;
+ case "some":
+    reputation = 3;
+    break;
+ case "many":
+    reputation = 5;
+    break;
+ case "well":
+    reputation = 7;
+    break;
+ case "incredible":
+    reputation = 10;
+    break;
+ }
+
+ switch(socialOption.value){
+  case "awful":
+    socialSkills = 0;
+    break;
+  case "bad":
+    socialSkills = 2;
+    break;
+ case "average":
+    socialSkills = 5;
+    break;
+ case "comfortable":
+    socialSkills = 7;
+    break;
+ case "skilled":
+    socialSkills = 10;
+    break;
+ }
+
+ switch(looksOption.value){
+  case "ugly":
+    looks = 0;
+    break;
+  case "uncomfortable":
+    looks = 3;
+    break;
+ case "average":
+    looks = 5;
+    break;
+ case "good":
+    looks = 7;
+    break;
+ case "impressive":
+    looks = 10;
+    break;
+ }
+
+social = reputation + socialSkills + looks;
+console.log("Social = " + social);
+console.log("Reputation = " + reputation);
+console.log("SocialSkills = " + socialSkills);
+console.log("Looks = " + looks);
+
+
+
+
+
+
 
 //Physical
+ switch(physiqueOptions.value){
+  case "hideous":
+    physique = 0;
+    break;
+  case "ugly":
+    physique = 2;
+    break;
+ case "average":
+    physique = 5;
+    break;
+ case "good":
+    physique = 7;
+    break;
+ case "beautiful":
+    physique = 10;
+    break;
+ }
 
- physique = physiqueObj[physiqueOption.value] ?? 0; 
- hormone = hormoneObj[hormoneOption.value] ?? 0;
+ switch(hormoneOptions.value){
+  case "androginous":
+    hormone = 0;
+    break;
+  case "poor":
+    hormone = 2;
+    break;
+ case "average":
+    hormone = 5;
+    break;
+ case "good":
+    hormone = 7;
+    break;
+ case "exceptional":
+    hormone = 10;
+    break;
+ }
 
- physical = physique + hormone;
+physical = physique + hormone;
+console.log("Physical = " + physical);
+console.log("Physique = " + physique);
+console.log("Hormone = " + hormone);
 
- console.log("Physical = " + physical);
- console.log("Physique = " + physique);
- console.log("Hormone = " + hormone);
+
+
+
+
+
+
 
 //Mental
+ switch(experienceOptions.value){
+  case "naive":
+    experience = 0;
+    break;
+  case "inexperience":
+    experience = 2;
+    break;
+ case "average":
+    experience = 5;
+    break;
+ case "well":
+    experience = 7;
+    break;
+ case "master":
+    experience = 10;
+    break;
+ }
 
- experience = experienceObj[experienceOption.value] ?? 0; 
- intelligence = intelligenceObj[intelligenceOption.value] ?? 0;
+ switch(intelligenceOptions.value){
+  case "brainless":
+    intelligence = 0;
+    break;
+  case "stupid":
+    intelligence = 2;
+    break;
+ case "average":
+    intelligence = 5;
+    break;
+ case "smart":
+    intelligence = 7;
+    break;
+ case "high":
+    intelligence = 10;
+    break;
+ }
 
- mental = experience + intelligence;
+mental = experience + intelligence;
+console.log("Mental = " + mental);
+console.log("Experience = " + experience);
+console.log("Intelligence = " + intelligence);
 
- console.log("Mental = " + mental);
- console.log("Experience = " + experience);
- console.log("Intelligence = " + intelligence);
-
- //other
- age = ageOption.value;
- region = regionObj[regionOption.value] ?? 0;
 
 //total
 
- if (genderOption.value === "male"){
-  //age
-  if(age > 0 && age <= 20){totalStatus.innerText = 20 - financial + social + physical + mental - region;}
-  else if (age > 20){totalStatus.innerText = financial + social + physical + mental - region;}
-  }
-
- else if(genderOption.value === "female"){
-  //age
-  if (age > 0 && age <= 50){totalStatus.innerText = 50 - (financial * 0.6) + (social * 1.2) + (physical * 1.4) + mental - age + region;}
-  else if (age > 50){totalStatus.innerText = (financial * 0.6) + (social * 1.2) + (physical * 1.4) + mental + region;}
-  
- }
-
-
-
+totalStatus.innerText = financial + social + physical + mental;
 
 });
 
