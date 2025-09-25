@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>Quest Log</title>
+
+ <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+ <div id="title">
+
+ <h1>Quest Log</h1>
+ <p>Enter in a goal, task, mission or quest details in the area below. Set major(important) or minor(less important). Put objectives. Add a description about the task, a date you want it completed by and other details.</p>
+
+ </div>
+ 
+ <div id="input">
+
+ <h2>Create Quest</h2>
+ <label for="nameInput">Title/Name</label> <input type="text" name ="nameInput" id="nameInput" required/>
+
+ <br> <br>
+ <label for="descriptionInput">Description</label> <textarea name ="descriptionInput" id="descriptionInput"> </textarea>
+ 
+ <br><br>
+ <div id="taskDiv">
+  <label for="taskInput1">Task 1</label> <input type="text" name ="taskInput1" id="taskInput1"/>
+  <br><br>
+  <button id="taskMore">Add another task</button>
+ </div>
+
+ <br> <br>
+ <fieldset>
+  <legend>Major or Minor</legend>
+  <label for="majorInput">Major</label> <input type="radio" name ="radioInput" id="majorInput" checked/>
+  <br>
+  <label for="minorInput">Minor</label> <input type="radio" name ="radioInput" id="minorInput"/>
+ </fieldset>
+
+ <br>
+ <button id="inputButton">Create</button>
+
+ </div>
+
+ <div id="output">
+
+ <h2>Check/Complete Quest</h2>
+
+ </div>
+
+ <script src="script2.js"></script>
+
+</body>
+<html>

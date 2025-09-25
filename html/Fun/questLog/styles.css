@@ -1,0 +1,22 @@
+body {background-color:#F2C9A5; text-align:center; font-size: 19px;}
+
+#title{border: 5px solid #2E2A73; border-radius:10px; margin:1% auto; padding:1%; width:80%; background-color:#C9C7F2;}
+
+#input{border: 5px solid #2E2A73; border-radius:10px; margin:1% auto; padding:1%; width:80%; background-color:#C9C7F2;}
+
+#output{border: 5px solid #2E2A73; border-radius:10px; margin:1% auto; padding:1%; width:80%; background-color:#C9C7F2;}
+
+.outputDiv{border: 5px solid #5D79C9; border-radius:10px; margin:1% auto; padding:1%; width:80%; background-color:#D5E1F7;}
+
+button{background-color:#F08B7A; border: 3px solid #80473E; border-radius:10px; padding:.5%; font-size:19px;}
+button:hover{background-color:#E09D92;}
+button:active{background-color:#DB3C25;}
+
+fieldset{border: 5px solid #5D79C9; width:30%; margin:1% auto;}
+
+input{border: 3px solid #5D79C9; padding:.3%; background-color:#D5E1F7;}
+
+#descriptionInput {width: 300px; height: 100px; padding:1%; background-color:#D5E1F7; border: 3px solid #5D79C9;}
+
+label[for="descriptionInput"] {display: block; margin-bottom: 5px;}
+
