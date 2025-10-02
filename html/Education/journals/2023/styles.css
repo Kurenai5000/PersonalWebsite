@@ -1,0 +1,55 @@
+html,body{margin:0; padding:0;}
+body {background:linear-gradient(#DEA2A2,#9FA6C7); border:5px solid #486496; margin:1%; width:97.5%;}
+/*Generic classes*/
+.centered{text-align:center;}
+
+.boxed{border: 5px solid #486496; padding: .5%; width:auto; height:10%;}
+
+.threeflex{display:flex; flex-direction:column;}
+.margined{margin:5%;}
+.margin3{margin:3%;}
+.smallMargin{margin:1%;}
+.largeText{font-size:20px;}
+
+.flexColumn{flex-direction:column;}
+.flexRow{flex-direction:row;}
+.flex{display:flex; justify-content:center; gap:1%;}
+
+.imgScale{height:auto; max-width:100%;}
+
+#indexImage{display:block; width:23%; height:auto%;  margin: 1% auto;}
+
+#returnTo{width:auto; margin:1% auto;}
+
+/*Drawings*/
+#circle{background-color:transparent; border:3px solid black; border-radius:50%; width:180px; height:180px; margin: 1% auto; display:flex; justify-content:center;align-items:center;}
+
+.line{position:absolute; left:50%; width:91px; height:3px; background-color:black; transform-origin:left center;}
+#lineDiagonal{width:100%; height:3px; background-color:black; top:50%; left:50%;}
+
+#lineVertical{width:3px; background-color:black; top:50%; left:50%; height:100%;}
+
+
+
+/*Elements*/
+a{font-size:26px; margin:1%; display:block;}
+
+hr{height:5px; color:#486496; background-color:#486496; font-size:0; border:0; width:20%;}
+
+table{width:auto; margin:1% auto; padding:1%;}
+td,th{border:3px solid #d2ab8a; }
+th{background-color:#e5cea7;}
+
+.tableScale{}
+
+/*phone*/
+@media screen and (max-width:640px){
+td,th{font-size:5px;}
+
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+td,th{font-size:18px;}
+}
