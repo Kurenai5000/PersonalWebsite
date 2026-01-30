@@ -1,0 +1,13 @@
+body{background-color:#F7D1C8;}
+
+#masterContainer{background-color:#EDB3A6;  padding:2%;}
+h1{text-align:center;}
+
+
+
+label{display:block;}
+p{width:15%;}
+
+.occContainer{background-color:#F2CCC4; border:4px solid #CF715F; padding:1%; display:flex; gap:3%;}
+
+
